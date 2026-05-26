@@ -50,3 +50,87 @@ body {
     background-color: #e53333;
     transform: scale(1.08);
 }
+/* SECCIONES GENERALES */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #aaaacc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* PROBLEMA */
+#problema {
+    background-color: #13132b;
+}
+
+/* SOLUCIÓN */
+#solucion {
+    background-color: #0f0f1a;
+}
+/* BENEFICIOS */
+#beneficios {
+    background-color: #13132b;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tarjeta {
+    background-color: #1a1a3e;
+    padding: 30px;
+    border-radius: 16px;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(59, 78, 196, 0.3);
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* TECNOLOGÍAS */
+#tecnologias {
+    background-color: #0f0f1a;
+}
+
+.tech-lista {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tech-lista span {
+    background-color: #1a1a3e;
+    padding: 10px 24px;
+    border-radius: 30px;
+    color: #aaaacc;
+    font-size: 0.95rem;
+}
+
+/* CTA */
+#cta {
+    background: linear-gradient(135deg, #1a1a3e, #3b4ec4);
+}
