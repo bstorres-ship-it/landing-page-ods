@@ -134,3 +134,56 @@ section p {
 #cta {
     background: linear-gradient(135deg, #1a1a3e, #3b4ec4);
 }
+/* ANIMACIONES */
+
+/* 1. Fade in al cargar la página */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hero-contenido {
+    animation: aparecer 1s ease forwards;
+}
+/* 2. Animación para las tarjetas al aparecer */
+@keyframes entrar {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tarjeta:nth-child(1) { animation: entrar 0.6s ease 0.1s forwards; opacity: 0; }
+.tarjeta:nth-child(2) { animation: entrar 0.6s ease 0.3s forwards; opacity: 0; }
+.tarjeta:nth-child(3) { animation: entrar 0.6s ease 0.5s forwards; opacity: 0; }
+
+/* 3. Pulso en el botón CTA */
+@keyframes pulso {
+    0%   { transform: scale(1);    }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1);    }
+}
+
+#cta .btn-principal {
+    animation: pulso 2s ease-in-out infinite;
+}
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
